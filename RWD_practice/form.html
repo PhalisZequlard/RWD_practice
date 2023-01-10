@@ -8,20 +8,86 @@
 </head>
 <body>
     <form action="" method="">
-        <label for="name">name：</label>
-        <input type="text" id="name" name="name">
-        <br>
-        <label for="phone">電話：</label>
-        <input type="text" id="phone" name="phone">
-        <br>
-        <label for="email">E-main：</label>
-        <input type="email" id="email" name="email">
-        <br>
-        <label for="number">數量</label>
-        <input type="number" id="number" name="number" max="5" min="1">
-        <br>
-        <label for="birth">生日</label>
-        <input type="date" id="bitth" name="birth">
+        <table>
+            <tr>
+                <td><label for="name">name：</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">電話：</label></td>
+                <td><input type="text" id="phone" name="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-main：</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="number">數量</label></td>
+                <td><input type="number" id="number" name="number" max="5" min="1"></td>
+            </tr>
+            <tr>
+                <td><label for="birth">生日</label></td>
+                <td><input type="date" id="bitth" name="birth"></td>
+            </tr>
+            <tr>
+                <td><label for="edu">學歷</label></td>
+                <td>
+                    <select name="edu" id="edu">
+                        <option value="國小">國小</option>
+                        <option value="國中">國中</option>
+                        <option value="高中職">高中職</option>
+                        <option value="大專院校" selected>大專院校</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="editor">使用的編輯器</label></td>
+                <td><input list="editor-list" id="editor" name="editor"></td>
+                <td>
+                    <datalist id="editor-list">
+                        <option value="visul studio code">visul studio code</option>
+                        <option value="sublime">sublime</option>
+                        <option value="dreamweaver">dreamweaver</option>
+                        <option value="atom">atom</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><label>性別</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="男">
+                    <label for="male">男</label>
+                    <input type="radio" id="female" name="gender" value="女">
+                    <label for="female">女</label>
+                    <input type="radio" id="unknown" name="gender" value="未知">
+                    <label for="unknown">未知</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>從何得知</label></td>
+                <td>
+                    <input type="checkbox" id="newspaper" name="knows" value="報章雜誌">
+                    <label for="newspaper">報章雜誌</label>
+                    <input type="checkbox" id="sns" name="knows" value="社群軟體">
+                    <label for="sns">社群軟體</label>
+                    <input type="checkbox" id="friend" name="knows" value="朋友告知">
+                    <label for="friend">朋友告知</label>
+                    <input type="checkbox" id="other" name="knows" value="其他">
+                    <label for="other">其他</label>                    
+                </td>
+            </tr>
+            <tr>
+                <td><label for="content">內容</label></td>
+                <td><textarea name="content" id="content" cols="60" rows="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="送出">
+                    <input type="reset">
+                    <input type="button" value="自訂義">                    
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
