@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        .title {
+            color: red;
+        }
+        #title {
+            color: greenyellow;
+        }
+        ol {
+            color: orange
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="title" id="title" style="color: pink">
+        CSS Specificity - CSS 權重
+    </h1>
+    <div>
+        影響數量愈少，權重越重，越優先套用 - 物以稀為貴
+    </div>
+    <ol>
+        <li>後 > 前</li>
+        <li>嵌入式</li>
+        <li>
+            id > class > tag
+        </li>
+    </ol>
+</body>
+</html>
