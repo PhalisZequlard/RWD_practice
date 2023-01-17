@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            /* px,%,vw,vh,em,rem */
+            /* height: 200px; */
+            /* min-height: 200px; */
+            background-color: #098;
+
+            overflow: visible;
+            /* hidden, scroll, auto, visible */
+        }
+       /* 群組選取 */
+        html, body {
+            height: 100%;
+        }
+        .box-2 {
+            width: 100%;
+            height: 100%;
+            background-color: #fa0;
+        }
+        /* height 父層必須有設定高度，才能使用%。 */
+        /* 
+            高度滿版可用height:100vh解決
+        */
+
+        .box-3 {
+            width: 400px;
+            height: 400px;
+
+        }
+        .box-3 h2 {
+            height: 100%;
+            background-color: rgb(255, 190, 51);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci non voluptates neque quis, ipsum quia magnam, cumque quam laborum perferendis eaque numquam dolores amet, odio explicabo exercitationem nemo? Rem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci non voluptates neque quis, ipsum quia magnam, cumque quam laborum perferendis eaque numquam dolores amet, odio explicabo exercitationem nemo? Rem.
+    </div>
+    <div class="box-2">
+        <h2>hello</h2>
+    </div>
+    <div class="box-3">
+        <h2>box</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            counter-reset: my_counter;
+            list-style: none;
+            
+        }
+        li::before {
+            counter-increment: my_counter;
+            content: ' [ 'counter(my_counter)' ] ';
+        }
+        .container {
+            counter-reset: container;
+        }
+        .container h2::before {
+            counter-increment: container;
+            content: '第'counter(container)'章--';
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>asdf</li>
+        <li>asdf</li>
+        <li>asdf</li>
+        <li>asdf</li>
+        <li>asdf</li>
+        <li>asdf</li>
+    </ol>
+
+    <div class="container">
+        <h2>資產負債表</h2>
+        <h2>借方與貸方</h2>
+        <h2>總資產與總負債</h2>
+        <h2>股本與公積</h2>
+        <h2>財產科目</h2>
+    </div>
+</body>
+</html>
