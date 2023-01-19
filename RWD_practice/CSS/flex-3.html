@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1200px;
+            margin-inline: auto;
+            display: flex;
+            align-items: flex-start;
+        }
+        .box {
+            width: 400px;
+            padding: 15px;
+            order: 2;
+        }
+        .box:nth-of-type(3) {
+            background-color: aquamarine;
+            order: 1;
+        }
+        .box:nth-of-type(1) {
+            background-color: rgb(255, 221, 0);
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum repudiandae esse ipsam iusto sunt doloremque modi corrupti repellendus! Porro explicabo quae quaerat veritatis. Nesciunt incidunt reprehenderit amet ipsum quod architecto.</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum repudiandae esse ipsam iusto sunt doloremque modi corrupti repellendus! Porro explicabo quae quaerat veritatis. Nesciunt incidunt reprehenderit amet ipsum quod architecto.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum repudiandae esse ipsam iusto sunt doloremque modi corrupti repellendus! Porro explicabo quae quaerat veritatis. Nesciunt incidunt reprehenderit amet ipsum quod architecto.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum repudiandae esse ipsam iusto sunt doloremque modi corrupti repellendus! Porro explicabo quae quaerat veritatis. Nesciunt incidunt reprehenderit amet ipsum quod architecto.</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum repudiandae esse ipsam iusto sunt doloremque modi corrupti repellendus! Porro explicabo quae quaerat veritatis. Nesciunt incidunt reprehenderit amet ipsum quod architecto.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum repudiandae esse ipsam iusto sunt doloremque modi corrupti repellendus! Porro explicabo quae quaerat veritatis. Nesciunt incidunt reprehenderit amet ipsum quod architecto.</p>
+        </div>
+    </div>
+</body>
+</html>

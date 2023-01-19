@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI';
+        }
+        .container {
+            width: 1600px;
+            height: 3000px;
+            margin-inline: auto;
+            background-color: #ccc;
+            /* height: 750px; */
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* 
+                flex-start, flex-end, center,
+                space-around, space-between, space-evenly
+            */
+            align-items: center;
+            /*  
+                flex-start, flex-end, center
+                stretch, baseline
+            */
+            /* 
+                flex-direction為row時，justify-content代表水平，align-item代表垂直
+                flex-direction為column時，justify-content代表垂直，align-item代表水平
+            */
+            align-content:space-evenly;
+            /* 
+                flex-start, flex-end, center,
+                space-around, space-between, space-evenly
+            */
+
+        }
+        .box {
+            padding: 15px;
+            width: 300px;
+
+            background-color: #fa0;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: #aaa;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .bar {
+            width: 100%;
+            height: 5px;
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam hic sint cumque aspernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam hic sint cumque aspernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam hic sint cumque aspernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur pernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur pernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur pernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam hic sint cumque aspernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam hic sint cumque aspernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam hic sint cumque aspernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam hic sint cumque aspernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur pernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur pernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur pernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam hic sint cumque aspernatur corrupti minima, adipisci dolorum reiciendis distinctio quia ducimus libero. Natus error ea inventore fuga nam accusantium incidunt!</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</body>
+</html>
