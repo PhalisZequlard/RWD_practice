@@ -17,6 +17,7 @@
         }
         img {
             width: 100%;
+            vertical-align: top;
         }
         .container {
             width: 1200px;
@@ -33,6 +34,7 @@
         .item-body {
             background-color: #ffffff;
             border-bottom: 6px solid #098;
+            position: relative;
         }
         .item-content {
             padding: 20px 15px;
@@ -56,9 +58,7 @@
             float: right;
             margin-top: -25px;
         }
-        .item-cover {
-            position: relative;
-        }
+
         .avatar {
             width: 70px;
             height: 70px;
@@ -68,6 +68,30 @@
             top: -35px;
             left: 15px;
             border: white solid 3px;
+            z-index: 10;
+        }
+        .item-cover {
+            overflow: hidden;
+            position: relative;
+        }
+        .item-cover img{
+            transition: 200ms ease-out;
+        }
+        .item-cover:hover img{
+            transform: scale(1.2);
+        }
+        .tag {
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            position: absolute;
+            transform: translateY(200%);
+            bottom: 15;
+            top: 80px;
+            left: 15px;
+            border-radius: 50%;
+            z-index: 10;
+            transition: 300ms ez;
         }
     </style>
 </head>
@@ -75,10 +99,11 @@
     <div class="container">
         <div class="item">
             <div class="item-body">
+                <div class="avatar">
+                    <img src="https://picsum.photos/id/74/200/200?random=1" alt="">
+                </div>
+                <div class="tag"></div>
                 <div class="item-cover">
-                    <div class="avatar">
-                        <img src="https://picsum.photos/id/74/200/200?random=1" alt="">
-                    </div>
                     <img src="https://picsum.photos/id/77/300/180?random=1" alt="">
                 </div>
                 <div class="item-content">
@@ -92,10 +117,11 @@
         </div>
         <div class="item">
             <div class="item-body">
+                <div class="avatar">
+                    <img src="https://picsum.photos/id/74/200/200?random=1" alt="">
+                </div>
                 <div class="item-cover">
-                    <div class="avatar">
-                        <img src="https://picsum.photos/id/74/200/200?random=1" alt="">
-                    </div>
+
                     <img src="https://picsum.photos/id/77/300/180?random=1" alt="">
                 </div>
                 <div class="item-content">
@@ -109,10 +135,10 @@
         </div>
         <div class="item">
             <div class="item-body">
+                <div class="avatar">
+                    <img src="https://picsum.photos/id/74/200/200?random=1" alt="">
+                </div>
                 <div class="item-cover">
-                    <div class="avatar">
-                        <img src="https://picsum.photos/id/74/200/200?random=1" alt="">
-                    </div>
                     <img src="https://picsum.photos/id/77/300/180?random=1" alt="">
                 </div>
                 <div class="item-content">
@@ -126,10 +152,11 @@
         </div>
         <div class="item">
             <div class="item-body">
+                <div class="avatar">
+                    <img src="https://picsum.photos/id/74/200/200?random=1" alt="">
+                </div>
                 <div class="item-cover">
-                    <div class="avatar">
-                        <img src="https://picsum.photos/id/74/200/200?random=1" alt="">
-                    </div>
+
                     <img src="https://picsum.photos/id/77/300/180?random=1" alt="">
                 </div>
                 <div class="item-content">
