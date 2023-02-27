@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior:smooth;
+}
+body {
+    font-family: 'Ping Fang TC','微軟正黑體','sans-serif';
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px;
+    width: 280px;
+    text-align: center;
+    border-radius: 50px;
+    margin-inline: 10px;
+    margin-block: 30px;
+}
+
+.btn-dark {
+    background-color: rgba(33, 33, 33, 0.765);
+    color: #eee!important;
+}
+
+.btn-light {
+    background-color: hsla(0, 0%, 82%, 0.732);
+    color: #222;
+}
