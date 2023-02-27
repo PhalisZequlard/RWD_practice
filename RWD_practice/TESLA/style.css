@@ -6,6 +6,8 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    background-color: rgba(255, 255, 255, 0.321);
+    backdrop-filter: blur(8px);
 }
 nav a {
     text-decoration: none;
@@ -16,16 +18,20 @@ nav a {
     display: flex;
     width: 100%;
 }
-
 .logo a {
     letter-spacing: 3px;
     font-weight: bold;
 }
-
 .menu a {
-    margin-inline: 10px;
+    display: inline-block;
+    margin-inline: 3px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .3s;
 }
-
+.menu a:hover {
+    background-color: rgb(255 255 255 / .2) ;
+}
 .menu-left {
     margin-left: auto;
 }
