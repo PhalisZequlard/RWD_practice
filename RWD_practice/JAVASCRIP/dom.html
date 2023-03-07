@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">hello Javascript</h1>
+        <p class="slogan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint expedita libero quasi, nisi beatae veniam nemo iste cupiditate ad esse, dolores amet doloribus deserunt quod possimus laborum numquam odio voluptatum.</p>
+        <ul>
+            <li class="list"><a href="#">list 1</a></li>
+            <li class="list"><a href="#">list 2</a></li>
+            <li class="list"><a href="#">list 3</a></li>
+            <li class="list"><a href="#">list 4</a></li>
+            <li class="list"><a href="#">list 5</a></li>
+            <li class="list"><a href="#">list 6</a></li>
+        </ul>
+        <div class="content">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt vero quae, ullam obcaecati nulla non sed omnis quasi distinctio veritatis impedit fugit doloribus, totam dolorem temporibus. Atque veritatis vel aperiam?
+            </p>
+        </div>
+    </div>
+    <script>
+        // get element
+        let title = document.getElementById('title');
+        let slogan = document.getElementsByClassName('slogan');
+        let list = document.getElementsByClassName('list');
+        let p = document.getElementsByTagName('p');
+        for(li of list){
+            console.log(li);
+        }
+    </script>
+</body>
+</html>
