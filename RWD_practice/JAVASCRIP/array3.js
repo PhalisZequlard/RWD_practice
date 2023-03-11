@@ -4,7 +4,7 @@ let users = [
         name: 'John',
         mail: 'john@gmail.com'
     },
-    {5
+    {
         id:2,
         name: 'Mary',
         mail: 'mary@gmail.com'
