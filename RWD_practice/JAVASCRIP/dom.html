@@ -27,11 +27,21 @@
     </div>
     <script>
         // get element
-        let title = document.getElementById('title');
-        let slogan = document.getElementsByClassName('slogan');
-        let list = document.getElementsByClassName('list');
-        let p = document.getElementsByTagName('p');
-        for(li of list){
+
+        // let title = document.getElementById('title');
+        // let slogan = document.getElementsByClassName('slogan');
+        // let list = document.getElementsByClassName('list');
+        // let p = document.getElementsByTagName('p');
+        // for(li of list){
+        //     console.log(li);
+        // }
+
+        // Query Selector
+        let title = document.querySelector('#title');
+        let slogan = document.querySelector('.slogan');
+        let list = document.querySelector('.list');
+        let lists = document.querySelectorAll('.list');
+        for(li of lists){
             console.log(li);
         }
     </script>
