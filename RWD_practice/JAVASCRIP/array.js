@@ -9,7 +9,7 @@
 // let drinks = new Array("水","紅茶","綠茶","咖啡");
 // console.log(drinks);
 
-let drinks = ["水","紅茶","綠茶","咖啡"];c
+let drinks = ["水","紅茶","綠茶","咖啡"];
 // console.log(drinks);
 // console.log(drinks[0]);
 // console.log(drinks[1]);
