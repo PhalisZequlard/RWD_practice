@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .tab {
+            width: 600px;
+            margin-inline: auto;
+            position: relative;
+        }
+        .tab-nav {
+            display: flex;
+            background-color: #222;
+            position: relative;
+            z-index: 10;
+        }
+        .tab-link {
+            text-decoration: none;
+            color: #eee;
+            padding: 10px 20px;
+            transition: 400ms;
+        }
+        .tab-link.active {
+            background-color: #fff8c4;
+            color: #000;
+        }
+        .tab-panel {
+            padding: 10px;
+            background-color: #fff8c4;
+            color: #222;
+            /* display: none; */
+            position: absolute;
+            opacity: 0;
+            transition: 400ms;
+            visibility: hidden;
+            transform: translateY(-10%);
+        }
+        .tab-panel.active {
+            /* display: block; */
+            /* animation: fadeIn 800ms; */
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0%);
+
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <div class="tab-nav">
+            <a href="#tab-1" data-panel="#tab-1" class="tab-link active">tab 1</a>
+            <a href="#tab-2" data-panel="#tab-2" class="tab-link">tab 2</a>
+            <a href="#tab-3" data-panel="#tab-3" class="tab-link">tab 3</a>
+            <a href="#tab-4" data-panel="#tab-4" class="tab-link">tab 4</a>
+        </div>
+        <div class="tab-panel active" id="tab-1">
+            <h3>tab 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto facilis ullam omnis, suscipit ipsam vitae, eum sequi sed odit doloremque officiis fuga quae porro eligendi sunt iure ratione qui voluptates!
+            </p>
+        </div>
+        <div class="tab-panel" id="tab-2">
+            <h3>tab 2</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto facilis ullam omnis, suscipit ipsam vitae, eum sequi sed odit doloremque officiis fuga quae porro eligendi sunt iure ratione qui voluptates!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto facilis ullam omnis, suscipit ipsam vitae, eum sequi sed odit doloremque officiis fuga quae porro eligendi sunt iure ratione qui voluptates!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto facilis ullam omnis, suscipit ipsam vitae, eum sequi sed odit doloremque officiis fuga quae porro eligendi sunt iure ratione qui voluptates!
+            </p>
+        </div>
+        <div class="tab-panel" id="tab-3">
+            <h3>tab 3</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto facilis ullam omnis, suscipit ipsam vitae, eum sequi sed odit doloremque officiis fuga quae porro eligendi sunt iure ratione qui voluptates!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto facilis ullam omnis, suscipit ipsam vitae, eum sequi sed odit doloremque officiis fuga quae porro eligendi sunt iure ratione qui voluptates!
+            </p>
+        </div>
+        <div class="tab-panel" id="tab-4">
+            <h3>tab 4</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto facilis ullam omnis, suscipit ipsam vitae, eum sequi sed odit doloremque officiis fuga quae porro eligendi sunt iure ratione qui voluptates!
+            </p>
+        </div>
+    </div>
+    <script>
+        let tabLinks = document.querySelectorAll('.tab-link');
+        // for(tabLink of tabLinks){
+        //     tabLink.onclick = function(){
+        //         let href = this.getAttribute('href');
+        //         console.log(href);
+        //         document.querySelector('.tab-panel.active').classList.remove('active');
+        //         document.querySelector(href).classList.add('active');
+
+        //         document.querySelector('.tab-link.active').classList.remove('active');
+        //         this.classList.add('active');
+        //     }
+        // }
+        // for(tabLink of tabLinks){
+        //     tabLink.onclick = e => {
+        //         let panel = e.target.dataset.panel;
+        //         document.querySelector('.tab-panel.active').classList.remove('active');
+        //         document.querySelector(panel).classList.add('active');
+
+        //         document.querySelector('.tab-link.active').classList.remove('active');
+        //         e.target.classList.add('active');
+        //     }
+        // } 
+        tabLinks.forEach(tabLink => {
+            tabLink.onclick = e => {
+                let panel = e.target.dataset.panel;
+                document.querySelector('.tab-panel.active').classList.remove('active');
+                document.querySelector(panel).classList.add('active');
+                document.querySelector('.tab-link.active').classList.remove('active');
+                e.target.classList.add('active');
+            }
+        })
+    </script>
+</body>
+</html>
