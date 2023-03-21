@@ -1,11 +1,12 @@
-/* 設定導覽列的背景顏色和高度 */
 nav {
-    width: 100%;
-    display: flex;
-    background-color: #333;
-    height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  height: 60px;
+  font-size: large;
 }
-/* 設定 logo 的樣式 */
+/* logo */
 .logo {
     padding: 10px;
     font-size: 25px;
@@ -34,53 +35,46 @@ nav {
 .logo a:hover::before {
     opacity: 1;
 }
-
-.logo a::after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: -10px;
-    width: calc(100% + 20px);
-    height: 5px;
-    background-color: #affbff;
-    opacity: 0;
-    filter: blur(10px);
-    transition: opacity 0.3s ease-out;
-}
-
-.logo a:hover::after {
-    opacity: 1;
-}
-
-/* 設定 menu 的樣式 */
+/* menu */
 .menu-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.menu-left {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .menu {
-    display: flex;
-    padding: 10px;
+  display: flex;
+  padding: 10px;
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
 }
 
 
 
-/* 其他 CSS */
 .menu-group a:hover {
-    background-color: #ffffff69;
-    color: #6fd9ff;
-    border-radius: 15px;
+  background-color: #ffffff69;
+  color: #6fd9ff;
+  border-radius: 15px;
 }
+
 .menu-group a {
-    color: #ffffff;
-    transition: color 0.3s ease-in-out;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
 }
+
 
