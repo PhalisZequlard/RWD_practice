@@ -45,7 +45,7 @@ section {
     background-size: cover;        
 }
 #model-s {
-    background-image: url(/images/model-s.jpg);
+    background-image: url(./images/model-s.jpg);
 }
 #model-3 {
     background-image: url('/images/model-3.jpg');    

@@ -1,0 +1,57 @@
+section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;        
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  overflow: hidden; /* 添加此行代码 */
+}
+
+#home1 {
+    background-image: url(../images/mid_home1.png);
+    opacity: 0.7;
+    position: relative;
+}
+
+#home1 {
+  background-image: url(../images/mid_home1.png);
+  opacity: 0.7;
+  position: relative;
+}
+
+.people {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 3px;
+    margin-bottom: auto;
+    font-size: 25px;
+    position: r;
+    left: 0;
+    animation: expand 2s forwards;
+    transform-origin: left;
+    position: absolute;
+}
+
+@keyframes expand {
+  from {
+    transform: scaleX(0);
+    left: 0;
+  }
+  to {
+    transform: scaleX(1);
+    
+  }
+}
+
+#home2 {
+    background-image: url(../images/mid_home2.png);
+    opacity: 0.9;
+}
