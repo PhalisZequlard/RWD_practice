@@ -26,30 +26,7 @@ section {
   position: relative;
 }
 
-.people {
-    width: 100%;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.781);
-    border-radius: 3px;
-    margin-bottom: auto;
-    font-size: 25px;
-    position: r;
-    left: 0;
-    animation: expand 2s forwards;
-    transform-origin: left;
-    position: absolute;
-}
 
-@keyframes expand {
-  from {
-    transform: scaleX(0);
-    left: 0;
-  }
-  to {
-    transform: scaleX(1);
-    
-  }
-}
 
 #home2 {
     background-image: url(../images/mid_home2.png);
